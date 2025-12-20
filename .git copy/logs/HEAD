@@ -1,0 +1,12 @@
+0000000000000000000000000000000000000000 a9271776bcd7eea06bd8b7c18eeea2f8b12b4035 Akashraj <akashrajk729@gmail.com> 1754044618 +0530	commit (initial): init
+a9271776bcd7eea06bd8b7c18eeea2f8b12b4035 84f5dcf56ce334e3654c334ff42d4777970ddefd Akashraj <akashrajk729@gmail.com> 1754045108 +0530	commit: Upload working Angular project
+84f5dcf56ce334e3654c334ff42d4777970ddefd 0000000000000000000000000000000000000000 Akashraj <akashrajk729@gmail.com> 1754045126 +0530	Branch: renamed refs/heads/main to refs/heads/main
+84f5dcf56ce334e3654c334ff42d4777970ddefd 84f5dcf56ce334e3654c334ff42d4777970ddefd Akashraj <akashrajk729@gmail.com> 1754045126 +0530	Branch: renamed refs/heads/main to refs/heads/main
+84f5dcf56ce334e3654c334ff42d4777970ddefd 0000000000000000000000000000000000000000 Akashraj <akashrajk729@gmail.com> 1754067354 +0530	Branch: renamed refs/heads/main to refs/heads/main
+84f5dcf56ce334e3654c334ff42d4777970ddefd 84f5dcf56ce334e3654c334ff42d4777970ddefd Akashraj <akashrajk729@gmail.com> 1754067354 +0530	Branch: renamed refs/heads/main to refs/heads/main
+84f5dcf56ce334e3654c334ff42d4777970ddefd db4bb8c1780441f4aa7bb807a3b0f3b402f37185 Akashraj <akashrajk729@gmail.com> 1754067619 +0530	commit: Save local changes before rebase
+db4bb8c1780441f4aa7bb807a3b0f3b402f37185 a75898867efe559a72f89a921e402a594791a378 Akashraj <akashrajk729@gmail.com> 1754067631 +0530	pull --rebase origin main (start): checkout a75898867efe559a72f89a921e402a594791a378
+a75898867efe559a72f89a921e402a594791a378 5df63a59856752e3feb2fdb635f54b01ec5b7f5d Akashraj <akashrajk729@gmail.com> 1754067631 +0530	pull --rebase origin main (pick): init
+5df63a59856752e3feb2fdb635f54b01ec5b7f5d 4f84237592b763e127e1e9c4e7aa8a0403dffb14 Akashraj <akashrajk729@gmail.com> 1754068170 +0530	commit: Upload Angular portfolio project
+4f84237592b763e127e1e9c4e7aa8a0403dffb14 63346b71dd6662244e1c33ebb00ea9ce1298047e Akashraj <akashrajk729@gmail.com> 1754072869 +0530	rebase (pick): Save local changes before rebase
+63346b71dd6662244e1c33ebb00ea9ce1298047e 63346b71dd6662244e1c33ebb00ea9ce1298047e Akashraj <akashrajk729@gmail.com> 1754072869 +0530	rebase (finish): returning to refs/heads/main

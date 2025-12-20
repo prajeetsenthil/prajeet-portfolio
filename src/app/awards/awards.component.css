@@ -1,0 +1,172 @@
+.awards-section {
+  background: #000;
+  padding: 4rem 1rem;
+  color: #fff;
+}
+
+.awards-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #8664f6, #f94f9e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  border-left: 4px solid #f94f9e;
+  padding-left: 0.8rem;
+}
+
+.award-card {
+  position: relative;
+  background: #111;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+}
+
+.award-card.glow-left::before,
+.award-card.glow-right::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  background: linear-gradient(to bottom, rgba(138, 43, 226, 0.5), rgba(0, 255, 255, 0.3), rgba(255, 0, 255, 0.4));
+  filter: blur(12px);
+  z-index: 0;
+}
+
+.award-card.glow-left::before {
+  left: -10px;
+}
+
+.award-card.glow-right::before {
+  right: -10px;
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+}
+
+.card-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.proof-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 12px;
+  margin: 1rem 0;
+  box-shadow: 0 0 12px rgba(91, 37, 245, 0.2);
+}
+
+
+.proof-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #111;
+  border: 1px solid #f94f9e;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.proof-btn:hover {
+  background: #f94f9e;
+  color: #000;
+}
+
+.off-cut-line {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, transparent, #333, transparent);
+  margin: 3rem 0;
+}
+
+.note-box {
+  background: #1a1a1a;
+  border-left: 4px solid #0ff;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  border-radius: 6px;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .awards-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .category-title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .award-card {
+    padding: 1.2rem;
+  }
+
+  .card-content h4 {
+    font-size: 1rem;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+  }
+
+  .proof-img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .proof-img {
+    height: 180px;
+    border-radius: 6px;
+  }
+
+  .proof-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .note-box {
+    font-size: 0.85rem;
+  }
+}

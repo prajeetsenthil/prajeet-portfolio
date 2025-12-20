@@ -1,0 +1,249 @@
+.edu-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  will-change: transform;
+}
+
+.tilt-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+}
+
+
+.education-journey {
+  background: #000000;
+  color: #ffffff;
+  position: relative;
+  padding: 40px 0;
+  overflow: hidden
+}
+
+.education-journey .container {
+  position: relative;
+  z-index: 1;
+}
+.section-subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #8664f6, #f94f9e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.edu-timeline {
+  position: relative;
+  padding-top: 60px;
+}
+
+.line-fade::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #b8dfff 30%, #9cdefd 70%, transparent);
+  z-index: 0;
+  opacity: 40px;
+}
+
+.edu-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.edu-wrap.left {
+  flex-direction: row-reverse;
+}
+
+.edu-card {
+  width: 45%;
+  padding: 40px;
+  border-radius: 12px;
+  background: linear-gradient(to bottom right, #343434, #161616f6);
+  box-shadow: 0 0 20px rgba(81, 81, 81, 0.3);
+  z-index: 1;
+}
+
+.edu-card .content h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.edu-card .institution {
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
+.dot-num {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 1.5px); /* Center the dot relative to timeline */
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  color: #111;
+  text-align: center;
+  line-height: 34px;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  font-weight: bold;
+  z-index: 2;
+}
+
+
+.year {
+  float: right;
+  font-size: 0.8rem;
+  background: #444;
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+
+
+/* Base container remains same */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* For medium screens (tablets) */
+@media (max-width: 1024px) {
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .edu-card {
+    padding: 2.5rem;
+    width: 90%;
+  }
+
+  .edu-wrap,
+  .edu-wrap.left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+ .dot-num {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 1rem auto;
+  }
+
+  .year {
+    float: none;
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+   .timeline-card {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .edu-card {
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  .dot-num {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+    line-height: 30px;
+    margin-bottom: 1rem;
+  }
+   .timeline-card {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+/* Remove hover-based tilt effect on touch devices */
+@media (hover: none) {
+  .edu-card:hover {
+    transform: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+
+.edu-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-in-out;
+}
+
+.edu-card.fade-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.edu-gradient {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  border-radius: 50%;
+  z-index: 0;
+  filter: blur(80px);
+}
+
+.glow-1 {
+  top: 12.3%;
+  left: 21%;
+    background: radial-gradient(circle, rgba(4, 142, 255, 0.407), transparent 60%);
+
+
+}
+
+.glow-2 {
+  top: 35%;
+  right: 23%;
+  background: radial-gradient(circle, rgba(4, 142, 255, 0.403), transparent 60%);
+}
+
+.glow-3 {
+  bottom: 4.8%;
+  left: 40%;
+  transform: translateX(-50%);
+  background: radial-gradient(circle, rgba(4, 142, 255, 0.404), transparent 60%);
+}

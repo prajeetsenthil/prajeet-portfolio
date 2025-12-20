@@ -1,0 +1,264 @@
+
+.projects-section {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  will-change: auto;
+}
+
+.project-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  contain: layout paint;
+}
+.project-status {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.3rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.project-status.completed {
+  background-color: #22c55e; 
+}
+
+.project-status.processing {
+  background-color: #fab115; 
+  color: #111;
+}
+
+.project-card {
+  background-color: #111;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  max-width: 500px;
+  flex: 1 1 45%;
+  transition: transform 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  transform: translateZ(0);
+}
+
+.project-card:hover {
+  transform: perspective(1000px) rotateY(2deg) rotateX(2deg);
+}
+
+.card-image {
+  height: 200px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.card-content {
+  color: white;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.project-tag {
+  background-color: #444;
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.project-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tech-pill {
+  background-color: #222;
+  padding: 0.3rem 0.7rem;
+  border-radius: 16px;
+  font-size: 0.75rem;
+}
+
+.features-section ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.features-section ul li {
+  margin-bottom: 0.3rem;
+}
+
+.skills-section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-subtitle {
+ text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+ font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #8664f6, #f94f9e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-1 .card-image { background-image: url('../assets/image/taskproject.png'); }
+.card-2 .card-image { background-image: url('#'); }
+.card-3 .card-image { background-image: url('#'); }
+.card-4 .card-image { background-image: url('#'); }
+
+@media screen and (max-width: 768px) {
+.project-card {
+    padding: 1rem;
+    flex: 1 1 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .project-row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .card-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .project-card,
+  .project-card:hover {
+    transition: none;
+    transform: none;
+  }
+}
+
+.project-card {
+  position: relative;
+  background-color: #111;
+  border-radius: 16px;
+  box-shadow:
+    0 0 20px rgba(144, 26, 255, 0.1),
+    0 0 40px rgba(87, 61, 74, 0.08),
+    0 0 60px rgba(0, 162, 255, 0.06);
+  padding: 1.5rem;
+  max-width: 500px;
+  flex: 1 1 45%;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  transform: translateZ(0);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 2px;
+  background: linear-gradient(135deg, rgba(0, 191, 255, 0.25), rgba(168, 85, 247, 0.25), rgba(236, 72, 153, 0.25));
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* White styled button for Live Demo */
+.live-demo {
+  background-color: white;
+  color: #000;
+  border: 1px solid #ccc;
+}
+.live-demo:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* Dark styled button for GitHub */
+.github-btn {
+  background-color: #24292e;
+  color: white;
+  border: 1px solid transparent;
+}
+.github-btn:hover {
+  background-color: #000;
+  transform: scale(1.05);
+}
